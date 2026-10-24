@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum 2 - Layout Web</title>
+
+    <!-- Menghubungkan CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>Website Saya</h1>
+        <p>Belajar Layout Web Semantik</p>
+    </header>
+
+<nav class="navigasi">
+    <ul>
+        <li>
+            <a href="index.html">Beranda</a>
+        </li>
+
+        <li class="dropdown">
+            <a href="#">Artikel &#9662;</a>
+
+            <ul class="submenu">
+                <li>
+                    <a href="baca-selengkapnya.php">
+                        Lingkungan
+                    </a>
+                </li>
+                <li>
+                    <a href="#teknologi">Teknologi</a>
+                </li>
+                <li>
+                    <a href="#pendidikan">Pendidikan</a>
+                </li>
+            </ul>
+        </li>
+
+        <li>
+            <a href="#tentang">Tentang Kami</a>
+        </li>
+
+        <li>
+            <a href="#kontak">Kontak</a>
+        </li>
+    </ul>
+</nav>
+
+    <main>
+        <article id="berita">
+            <h2>Content / Article</h2>
+            <p>
+                Ini adalah bagian konten utama website.
+                Bagian ini digunakan untuk menampilkan
+                berita, informasi, atau artikel.
+            </p>
+        </article>
+
+        <aside id="profil">
+            <h3>Sidebar / Aside</h3>
+            <p>Ini adalah bagian informasi samping website.</p>
+        </aside>
+    </main>
+
+    <footer id="kontak">
+        <p>Praktikum 2 - Layout Web Semantik</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

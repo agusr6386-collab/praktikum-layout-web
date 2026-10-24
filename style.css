@@ -1,0 +1,142 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+}
+
+
+.container {
+    width: 960px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+header {
+    height: 180px;
+    background-color: steelblue;
+    background-image: url("images/header.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 45px;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #333333;
+    padding: 15px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    width: 620px;
+    min-height: 250px;
+    padding: 15px;
+    background-color: #f5f5f5;
+}
+
+aside {
+    width: 280px;
+    padding: 15px;
+    background-color: #e1e8ed;
+}
+
+footer {
+    background-color: #333333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.artikel-penuh {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    line-height: 1.8;
+}
+
+.artikel-penuh img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+}
+
+.artikel-penuh p {
+    text-align: justify;
+}
+
+.navigasi {
+    background-color: #333;
+}
+
+.navigasi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigasi > ul {
+    display: flex;
+}
+
+.navigasi li {
+    position: relative;
+}
+
+.navigasi a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.navigasi a:hover {
+    background-color: #087f5b;
+}
+
+.navigasi .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    background-color: #333;
+    z-index: 10;
+}
+
+.navigasi .dropdown:hover > .submenu {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .navigasi > ul {
+        flex-direction: column;
+    }
+
+    .navigasi .submenu {
+        position: static;
+    }
+}
+
+
